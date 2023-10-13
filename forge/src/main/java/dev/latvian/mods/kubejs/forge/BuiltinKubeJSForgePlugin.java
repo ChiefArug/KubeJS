@@ -2,7 +2,6 @@ package dev.latvian.mods.kubejs.forge;
 
 import dev.latvian.mods.kubejs.BuiltinKubeJSPlugin;
 import dev.latvian.mods.kubejs.fluid.FluidStackJS;
-import dev.latvian.mods.kubejs.integration.forge.jei.JEIEvents;
 import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.kubejs.util.ClassFilter;
@@ -10,7 +9,6 @@ import dev.latvian.mods.kubejs.util.LegacyCodeHandler;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 public class BuiltinKubeJSForgePlugin extends BuiltinKubeJSPlugin {
@@ -18,10 +16,6 @@ public class BuiltinKubeJSForgePlugin extends BuiltinKubeJSPlugin {
 	public void registerEvents() {
 		super.registerEvents();
 		ForgeKubeJSEvents.register();
-
-		if (ModList.get().isLoaded("jei")) {
-			JEIEvents.register();
-		}
 	}
 
 	@Override

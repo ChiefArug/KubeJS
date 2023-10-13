@@ -1,4 +1,4 @@
-package dev.latvian.mods.kubejs.integration.forge.jei;
+package dev.latvian.mods.kubejs.integration.jei;
 
 import dev.latvian.mods.kubejs.event.EventJS;
 import dev.latvian.mods.kubejs.event.EventResult;
